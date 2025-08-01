@@ -1,1 +1,5 @@
 material/*
+.DS_Store
+*.log
+*.tmp
+*.bak
