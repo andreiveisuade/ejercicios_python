@@ -1,0 +1,53 @@
+--- EJERCICIOS DE ANÁLISIS ---
+
+1. Para cada expresión regular interprétela e indique por cada cadena de texto indicada si la misma válida contra la expresión regular:
+a. [0-9a-zA-Z][a-zA-Z]*
+   i. "CTA37"
+   ii. "25FEB"
+   iii. "LUIS"
+b. \[[1-9]*\]
+   i. "[034]"
+   ii. "[322]"
+   iii. "[]"
+c. [A-Z][^A-Z0-9]
+   i. "Ax"
+   ii. "Bz"
+   iii. "F9"
+   iv. "Xx"
+d. A(12|21)?B
+   i. "A12B"
+   ii. "AB"
+   iii. "A21B"
+
+2. Para cada expresión regular indique si la frase correspondiente es correcta (V/F):
+Expresión                | Frase                                                              | V/F
+-------------------------|--------------------------------------------------------------------|-----
+[Ff][Ii][Nn]             | Corresponde a la palabra "fin" con cualquier combinación de mayúscula y minúscula.
+#.*                      | Válida que una línea comience con '#'.
+^[0-9]                   | Reconocería las líneas que empiecen por algo distinto de un número.
+/)$                      | Reconocería el ')' al final de una línea.
+[0-9][0-9]*              | Equivale a [0-9]+.
+-?([0-9]*\.[0-9]+)...    | Reconocería un número decimal.
+
+3. Indique que se representa con las siguientes expresiones regulares:
+Expresión    | Explicación
+-------------|------------
+g            |
+^E           |
+o$           |
+^200[23]     |
+200[^2-3]    |
+[aio]$       |
+^[^A-Z]      |
+[^a-z]$      |
+[0-9][0-9]*  |
+
+4. Escribir expresiones que representen los siguientes requerimientos:
+a. Números de celular usando guiones como separadores y 4, 5 o 6 como primer número después del 15. Ejemplos: 15-5603-4854, 15-6648-5861, etc.).
+b. Formato de fechas con formato dd/mm/aaaa, suponiendo que todos los meses tienen 30 días.
+c. Cadenas de texto de cualquier largo, que solo contengan letras, números y espacios.
+d. Números que se encuentran entre 42000 y 42999.
+e. Líneas que comiencen con dos barras de división (//).
+f. Líneas que no comiencen con un dígito numérico.
+g. La palabra "sol" con cualquier combinación de mayúsculas y minúsculas.
+h. Cualquier palabra de dos letras, de las cuales la primera es minúscula y la segunda mayúscula.
